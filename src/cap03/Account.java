@@ -27,6 +27,15 @@ public class Account {
 	public double getBalance() {
 		return balance;
 	}
+	
+	// Método para retirar saldi da conta
+	public void withDraw(double withDraw) {
+		if(withDraw <= balance) {
+			balance = balance - withDraw;
+		} else {
+			System.out.println("\nWithDrawal amount exceeded account balance!");
+		}
+	}
 
 	// Método para definir o nome no objeto
 	public void setName(String name) {
