@@ -1,6 +1,7 @@
 package cap04;
 
 import java.awt.Graphics;
+
 import javax.swing.JPanel;
 
 public class DrawPanelB extends JPanel {
@@ -35,6 +36,7 @@ public class DrawPanelB extends JPanel {
 			g.drawLine(0, height * 2, width - i, height - i);
 			g.drawLine(0, height * 2, width + i, height + i);
 		}
+
 	}
 
 }
